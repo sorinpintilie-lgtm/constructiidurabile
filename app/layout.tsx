@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Manrope, Playfair_Display } from "next/font/google";
+import { Plus_Jakarta_Sans, Sora } from "next/font/google";
 import "./globals.css";
 
-const manrope = Manrope({
+const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-inter",
   subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "600", "700"],
 });
 
-const playfair = Playfair_Display({
+const sora = Sora({
   variable: "--font-space-grotesk",
   subsets: ["latin", "latin-ext"],
   weight: ["500", "600", "700"],
@@ -45,7 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ro">
-      <body className={`${manrope.variable} ${playfair.variable} antialiased`}>
+      <body className={`${plusJakarta.variable} ${sora.variable} antialiased`}>
         {children}
       </body>
     </html>

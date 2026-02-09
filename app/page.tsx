@@ -1,4 +1,5 @@
 import { FAQAccordion } from "./components/FAQAccordion";
+import { PromoBar } from "./components/PromoBar";
 import { StickyHeader } from "./components/StickyHeader";
 import { TriangleRevealHero } from "./components/TriangleRevealHero";
 import {
@@ -35,6 +36,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
       />
+      <PromoBar />
       <StickyHeader />
       <main>
         <TriangleRevealHero />

@@ -296,6 +296,18 @@ export function Footer() {
           <p className="mb-2 text-white">Arie de servicii</p>
           <p className="text-[var(--glacier-200)]/80">Execuție în toată România, în funcție de planificare și acces pe teren.</p>
           <p className="mt-2 text-[var(--glacier-200)]/70">Social: Instagram • Facebook • YouTube</p>
+          <div className="mt-4">
+            <p className="mb-2 text-xs tracking-[0.16em] text-[var(--glacier-200)]/75 uppercase">Crafted in the clouds by</p>
+            <a href="https://sky.ro" target="_blank" rel="noreferrer" className="inline-block">
+              <Image
+                src="/images/skyro-LOGO-6A-final -without tagline-01 (3).png"
+                alt="sky.ro"
+                width={150}
+                height={42}
+                className="h-8 w-auto object-contain"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </footer>

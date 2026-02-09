@@ -14,7 +14,7 @@ export function StickyHeader() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 border-b transition-all duration-500 ${
+      className={`fixed inset-x-0 top-[calc(var(--promo-bar-height)+env(safe-area-inset-top))] z-50 border-b transition-all duration-500 ${
         scrolled
           ? "border-[rgb(142_163_181/0.35)] bg-[rgb(238_246_251/0.72)] shadow-[0_8px_40px_rgb(11_18_32/0.08)] backdrop-blur-xl"
           : "border-[rgb(142_163_181/0.2)] bg-[rgb(238_246_251/0.28)] backdrop-blur-md"

@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 :root {
+  --promo-bar-height: 40px;
+  --header-height: 64px;
   --ink-950: #0b1220;
   --slate-900: #0f1b2d;
   --glacier-200: #cfe6f3;
@@ -16,6 +18,7 @@
 }
 
 body {
+  padding-top: calc(var(--promo-bar-height) + env(safe-area-inset-top) + var(--header-height));
   background: var(--mist-100);
   color: var(--ink-950);
   font-family: var(--font-inter), Arial, sans-serif;

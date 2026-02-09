@@ -20,17 +20,17 @@ export function StickyHeader() {
           : "border-[rgb(142_163_181/0.2)] bg-[rgb(238_246_251/0.28)] backdrop-blur-md"
       }`}
     >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 md:px-10">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-10">
         <div className="flex items-center gap-3">
           <div className="h-10 w-10 rounded-xl border border-[rgb(142_163_181/0.35)] bg-white/45" />
-          <span className="font-display text-sm md:text-base">Construcții Durabile</span>
+          <span className="font-display text-xs md:text-base">Construcții Durabile</span>
         </div>
-        <nav className="hidden gap-6 text-sm text-[var(--ink-950)]/75 md:flex">
+        <nav className="hidden gap-5 text-sm text-[var(--ink-950)]/75 md:flex">
           <a href="#modele">Modele</a>
           <a href="#proces">Proces</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a href="#contact" className="shine rounded-xl bg-[var(--pine-700)] px-4 py-2 text-sm text-white">
+        <a href="#contact" className="shine rounded-xl bg-[var(--pine-700)] px-3 py-2 text-xs text-white md:px-4 md:text-sm">
           Cere ofertă
         </a>
       </div>

@@ -101,7 +101,7 @@ export function TriangleRevealHero() {
   }, []);
 
   return (
-    <section id="hero" ref={sectionRef} className="relative isolate min-h-[260vh] overflow-clip">
+    <section id="hero" ref={sectionRef} className="relative isolate min-h-[210vh] overflow-clip md:min-h-[260vh]">
       <div className="story-bg absolute inset-0 -z-20" />
       <div className="absolute inset-x-0 top-0 -z-[6]">
         <Image
@@ -117,7 +117,7 @@ export function TriangleRevealHero() {
       <div ref={bgGridRef} className="blueprint-grid absolute inset-0 -z-10 opacity-30" />
       <div className="noise-overlay absolute inset-0 -z-10 opacity-50" />
 
-      <div className="pointer-events-none absolute inset-x-0 top-18 z-40 flex justify-center md:top-22">
+      <div className="pointer-events-none absolute inset-x-0 top-18 z-40 hidden justify-center md:top-22 md:flex">
         <div className="relative overflow-hidden rounded-2xl border border-[rgb(207_230_243/0.7)] bg-[linear-gradient(135deg,rgb(238_246_251/0.72),rgb(224_236_246/0.38))] px-5 py-4 backdrop-blur-2xl md:px-8">
           <div className="absolute -inset-x-16 -top-12 h-16 rotate-6 bg-[linear-gradient(90deg,transparent,rgb(255_255_255/0.7),transparent)]" />
           <div className="absolute inset-0 rounded-2xl shadow-[inset_0_1px_0_rgb(255_255_255/0.8),0_16px_60px_rgb(11_18_32/0.2)]" />
@@ -134,21 +134,21 @@ export function TriangleRevealHero() {
         </div>
       </div>
 
-      <div className="sticky top-0 z-20 h-screen pt-16">
+      <div className="sticky top-0 z-20 h-[100svh] pt-14 md:pt-16">
         <div className="absolute inset-0">
           <div className="absolute left-0 top-0 h-full w-full bg-[linear-gradient(155deg,rgb(11_18_32/0.12),transparent_48%,rgb(11_18_32/0.15))]" />
         </div>
 
-        <div ref={heroShellRef} className="relative z-20 mx-auto grid h-full max-w-[1500px] grid-cols-12 items-center gap-6 px-6 md:px-10">
-          <article ref={leftPanelRef} className="col-span-12 rounded-3xl border border-[rgb(142_163_181/0.3)] bg-white/58 p-6 backdrop-blur-md md:col-span-3 md:p-7 xl:col-span-3">
+        <div ref={heroShellRef} className="relative z-20 mx-auto grid h-full max-w-[1500px] grid-cols-12 items-center gap-4 px-4 md:gap-6 md:px-10">
+          <article ref={leftPanelRef} className="col-span-12 rounded-3xl border border-[rgb(142_163_181/0.3)] bg-white/58 p-4 backdrop-blur-md md:col-span-3 md:p-7 xl:col-span-3">
             <p className="text-xs tracking-[0.17em] text-[var(--pine-700)] uppercase">Cabane A-Frame • Lemn • La cheie</p>
-            <h1 className="font-display mt-3 text-3xl leading-tight md:text-5xl">
+            <h1 className="font-display mt-2 text-2xl leading-tight md:mt-3 md:text-5xl">
               Construcții din lemn care arată bine și rezistă.
             </h1>
             <p className="mt-3 text-[var(--ink-950)]/78">
               Executăm corect: structură, îmbinări, izolație și finisaje — fără compromisuri.
             </p>
-            <div className="mt-5 flex flex-wrap gap-3">
+            <div className="mt-4 flex flex-wrap gap-2 md:mt-5 md:gap-3">
               <a href="#contact" className="shine rounded-2xl bg-[var(--pine-700)] px-5 py-3 text-sm text-white">Cere ofertă</a>
               <a href="#modele" className="rounded-2xl border border-[rgb(142_163_181/0.45)] bg-white/60 px-5 py-3 text-sm">Vezi modele A-Frame</a>
               <a href="#contact" className="self-center text-sm underline decoration-[var(--oak-500)]">Trimite schița ta</a>
@@ -157,7 +157,7 @@ export function TriangleRevealHero() {
 
           <div className="col-span-12 hidden md:col-span-6 md:block" />
 
-          <aside ref={rightPanelRef} className="col-span-12 rounded-3xl border border-[rgb(142_163_181/0.3)] bg-white/58 p-6 backdrop-blur-md md:col-span-3 md:p-7 xl:col-span-3">
+          <aside ref={rightPanelRef} className="col-span-12 rounded-3xl border border-[rgb(142_163_181/0.3)] bg-white/58 p-4 backdrop-blur-md md:col-span-3 md:p-7 xl:col-span-3">
             <h2 className="font-display text-xl">Ce construim</h2>
             <ul className="mt-3 space-y-2 text-sm text-[var(--ink-950)]/78">
               <li>• Cabane A-Frame</li>
@@ -180,10 +180,10 @@ export function TriangleRevealHero() {
       </div>
 
       <div ref={handoffRef} className="pointer-events-none absolute inset-x-0 bottom-0 z-30">
-        <div className="mx-auto flex max-w-[1400px] items-end px-6 pb-4 md:px-10">
+        <div className="mx-auto flex max-w-[1400px] items-end px-4 pb-4 md:px-10">
           <div
             ref={overlayRef}
-            className="pointer-events-auto w-full max-w-xl rounded-3xl border border-[rgb(207_230_243/0.55)] bg-[rgb(238_246_251/0.56)] p-6 text-[var(--ink-950)] backdrop-blur-xl md:p-8"
+            className="pointer-events-auto w-full max-w-xl rounded-3xl border border-[rgb(207_230_243/0.55)] bg-[rgb(238_246_251/0.62)] p-4 text-[var(--ink-950)] backdrop-blur-xl md:p-8"
           >
             <h3 className="font-display text-2xl md:text-3xl">Detalii proiect</h3>
             <ul className="mt-4 space-y-2 text-sm md:text-base">

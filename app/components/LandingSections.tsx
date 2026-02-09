@@ -113,8 +113,8 @@ export function AFrameHero() {
 
 export function StaggeredModels() {
   return (
-    <section id="modele" className="mx-auto max-w-7xl px-6 py-24 md:px-10">
-      <div className="mb-12 flex items-end justify-between gap-6">
+    <section id="modele" className="mx-auto max-w-7xl px-4 py-18 md:px-10 md:py-24">
+      <div className="mb-8 flex items-end justify-between gap-6 md:mb-12">
         <div>
           <p className="mb-3 text-sm tracking-[0.2em] text-[var(--pine-700)] uppercase">
             Modele A-Frame
@@ -124,7 +124,7 @@ export function StaggeredModels() {
         <div className="hidden h-px w-36 bg-[var(--oak-500)] md:block" />
       </div>
 
-      <div className="relative grid gap-6 md:grid-cols-2">
+      <div className="relative grid gap-5 md:grid-cols-2 md:gap-6">
         <div className="pointer-events-none absolute left-[35%] top-10 hidden h-[75%] w-px -rotate-[27deg] bg-[rgb(142_163_181/0.5)] md:block" />
         {MODELS.map((model, index) => (
           <article
@@ -133,7 +133,7 @@ export function StaggeredModels() {
               index % 2 === 1 ? "md:mt-14" : ""
             }`}
           >
-            <div className="relative mb-5 h-54 overflow-hidden rounded-2xl">
+              <div className="relative mb-4 h-48 overflow-hidden rounded-2xl md:mb-5 md:h-54">
               <Image
                 src={model.image}
                 alt={`${model.name} - placeholder imagine`}
@@ -143,7 +143,7 @@ export function StaggeredModels() {
                 className="object-cover transition duration-500 group-hover:scale-105"
               />
             </div>
-            <h3 className="font-display text-2xl">{model.name}</h3>
+              <h3 className="font-display text-xl md:text-2xl">{model.name}</h3>
             <p className="mt-2 text-sm text-[var(--ink-950)]/70">
               {model.footprint} • {model.use} • Timp estimat: {model.time}
             </p>
@@ -171,7 +171,7 @@ export function ProofChips() {
   ];
 
   return (
-    <section className="noise-overlay bg-[var(--slate-900)] px-6 py-24 text-white md:px-10">
+    <section className="noise-overlay bg-[var(--slate-900)] px-4 py-18 text-white md:px-10 md:py-24">
       <div className="mx-auto max-w-7xl">
         <p className="mb-3 text-sm tracking-[0.2em] text-[var(--glacier-200)] uppercase">
           De ce Constructii Durabile
@@ -185,7 +185,7 @@ export function ProofChips() {
             {chips.map((chip, index) => (
               <div
                 key={chip}
-                className={`group relative w-full rounded-2xl border border-[rgb(142_163_181/0.35)] bg-[rgb(255_255_255/0.08)] px-5 py-4 text-sm backdrop-blur-sm transition duration-500 hover:-translate-y-0.5 hover:bg-[rgb(255_255_255/0.14)] md:w-[46%] ${
+                className={`group relative w-full rounded-2xl border border-[rgb(142_163_181/0.35)] bg-[rgb(255_255_255/0.08)] px-4 py-3 text-sm backdrop-blur-sm transition duration-500 hover:-translate-y-0.5 hover:bg-[rgb(255_255_255/0.14)] md:w-[46%] md:px-5 md:py-4 ${
                   index % 2 === 0 ? "md:mr-auto" : "md:ml-auto"
                 }`}
               >
@@ -206,7 +206,7 @@ export function AFrameProcessTimeline() {
 
 export function AngledGallery() {
   return (
-    <section id="terase" className="mx-auto max-w-7xl px-6 py-24 md:px-10">
+    <section id="terase" className="mx-auto max-w-7xl px-4 py-18 md:px-10 md:py-24">
       <div className="mb-10 max-w-2xl">
         <p className="mb-3 text-sm tracking-[0.2em] text-[var(--pine-700)] uppercase">Terase & Foișoare</p>
         <h2 className="font-display text-3xl md:text-5xl">Extindem spațiul, păstrând stilul</h2>
@@ -214,15 +214,15 @@ export function AngledGallery() {
           Lemn tratat, prinderi corecte, drenaj și protecție.
         </p>
       </div>
-      <div className="grid gap-5 md:grid-cols-[1.05fr_1fr]">
-        <figure className="relative h-[460px] overflow-hidden [clip-path:polygon(0_0,100%_2%,96%_100%,0_98%)]">
+      <div className="grid gap-4 md:grid-cols-[1.05fr_1fr] md:gap-5">
+        <figure className="relative h-[320px] overflow-hidden [clip-path:polygon(0_0,100%_2%,96%_100%,0_98%)] md:h-[460px]">
           <Image src="/images/terasa-1.webp" alt="Terasă placată cu lemn" fill loading="lazy" className="object-cover" />
         </figure>
         <div className="grid gap-5">
-          <figure className="relative h-[220px] overflow-hidden [clip-path:polygon(2%_0,100%_0,98%_100%,0_100%)]">
+          <figure className="relative h-[180px] overflow-hidden [clip-path:polygon(2%_0,100%_0,98%_100%,0_100%)] md:h-[220px]">
             <Image src="/images/foisor-1.jpg" alt="Foișor modern din lemn" fill loading="lazy" className="object-cover" />
           </figure>
-          <figure className="relative h-[220px] overflow-hidden [clip-path:polygon(0_0,98%_2%,100%_100%,2%_100%)]">
+          <figure className="relative h-[180px] overflow-hidden [clip-path:polygon(0_0,98%_2%,100%_100%,2%_100%)] md:h-[220px]">
             <Image src="/images/terasa-2.jpg" alt="Detaliu balustradă terasă" fill loading="lazy" className="object-cover" />
           </figure>
         </div>
@@ -233,16 +233,16 @@ export function AngledGallery() {
 
 export function ContactCTA() {
   return (
-    <section id="contact" className="relative mx-auto max-w-7xl px-6 py-24 md:px-10">
+    <section id="contact" className="relative mx-auto max-w-7xl px-4 py-18 md:px-10 md:py-24">
       <svg className="pointer-events-none absolute inset-0 h-full w-full opacity-15" viewBox="0 0 800 400" aria-hidden>
         <path d="M120 340 L400 60 L680 340" fill="none" stroke="currentColor" strokeWidth="1.3" />
       </svg>
-      <div className="relative overflow-hidden rounded-[2rem] border border-[rgb(142_163_181/0.35)] bg-[linear-gradient(145deg,rgb(255_255_255/0.92),rgb(238_246_251/0.88))] p-8 shadow-[0_24px_80px_rgb(11_18_32/0.08)] md:p-10">
+      <div className="relative overflow-hidden rounded-[2rem] border border-[rgb(142_163_181/0.35)] bg-[linear-gradient(145deg,rgb(255_255_255/0.92),rgb(238_246_251/0.88))] p-5 shadow-[0_24px_80px_rgb(11_18_32/0.08)] md:p-10">
         <div className="pointer-events-none absolute -right-20 -top-20 h-52 w-52 rounded-full bg-[radial-gradient(circle,rgb(184_137_90/0.22),transparent_70%)]" />
-        <h2 className="font-display max-w-2xl text-3xl leading-tight md:text-5xl">
+        <h2 className="font-display max-w-2xl text-2xl leading-tight md:text-5xl">
           Spune-ne terenul, bugetul și ideea. Noi revenim cu o propunere corectă.
         </h2>
-        <form className="mt-8 grid gap-4 md:grid-cols-2">
+        <form className="mt-6 grid gap-3 md:mt-8 md:gap-4 md:grid-cols-2">
           <label className="text-sm">
             Nume
             <input className="mt-2 w-full rounded-xl border border-[rgb(142_163_181/0.45)] px-4 py-3" name="name" />

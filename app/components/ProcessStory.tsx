@@ -122,24 +122,24 @@ export function AFrameProcessStory() {
   }, []);
 
   return (
-    <section id="proces" ref={sectionRef} className="relative mx-auto min-h-[760vh] max-w-7xl px-6 md:px-10">
-      <div ref={stickyRef} className="relative h-screen overflow-hidden py-24">
+    <section id="proces" ref={sectionRef} className="relative mx-auto min-h-[680vh] max-w-7xl px-4 md:min-h-[760vh] md:px-10">
+      <div ref={stickyRef} className="relative h-[100svh] overflow-hidden py-16 md:py-24">
         <div className="blueprint-grid pointer-events-none absolute inset-0 opacity-30" />
         <p className="mb-3 text-sm tracking-[0.2em] text-[var(--pine-700)] uppercase">Procesul nostru</p>
-        <h2 className="font-display mb-10 max-w-3xl text-3xl md:text-5xl">
+        <h2 className="font-display mb-8 max-w-3xl text-2xl md:mb-10 md:text-5xl">
           Linie de execuție clară, cu vârf în etapa de structură
         </h2>
 
         <div className="pointer-events-none absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-[linear-gradient(to_bottom,transparent,rgb(142_163_181/0.55),transparent)] md:block" />
 
-        <div className="relative mt-6 h-[70vh]">
+        <div className="relative mt-4 h-[72vh] md:mt-6 md:h-[70vh]">
           {STEPS.map((step, index) => (
             <div
               key={step.title}
               ref={(el) => {
                 cardsRef.current[index] = el;
               }}
-              className={`absolute top-1/2 z-20 w-[260px] -translate-y-1/2 overflow-hidden rounded-3xl border border-[rgb(142_163_181/0.35)] bg-white/88 p-5 shadow-[0_18px_60px_rgb(11_18_32/0.1)] backdrop-blur-md md:w-[min(58vw,760px)] md:p-6 ${
+              className={`absolute top-1/2 z-20 w-[92vw] max-w-[560px] -translate-y-1/2 overflow-hidden rounded-3xl border border-[rgb(142_163_181/0.35)] bg-white/90 p-4 shadow-[0_18px_60px_rgb(11_18_32/0.1)] backdrop-blur-md md:w-[min(58vw,760px)] md:p-6 ${
                 index % 2 === 0 ? "left-0 md:left-[3%]" : "right-0 md:right-[3%]"
               }`}
             >
@@ -167,7 +167,7 @@ export function AFrameProcessStory() {
               ref={(el) => {
                 imagesRef.current[index] = el;
               }}
-              className={`absolute top-1/2 z-10 hidden w-[240px] -translate-y-1/2 overflow-hidden rounded-3xl border border-[rgb(142_163_181/0.35)] bg-white/82 p-2 shadow-[0_18px_60px_rgb(11_18_32/0.12)] backdrop-blur-md lg:block lg:w-[min(22vw,320px)] ${
+              className={`absolute top-1/2 z-10 hidden w-[240px] -translate-y-1/2 overflow-hidden rounded-3xl border border-[rgb(142_163_181/0.35)] bg-white/82 p-2 shadow-[0_18px_60px_rgb(11_18_32/0.12)] backdrop-blur-md xl:block xl:w-[min(22vw,320px)] ${
                 index % 2 === 0 ? "right-[3%]" : "left-[3%]"
               }`}
             >

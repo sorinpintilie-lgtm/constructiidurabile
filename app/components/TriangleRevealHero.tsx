@@ -155,12 +155,7 @@ export function TriangleRevealHero() {
             </div>
           </article>
 
-          <div className="pointer-events-none col-span-12 hidden h-[88vh] min-h-[640px] md:col-span-6 md:block">
-            <div className="relative mx-auto h-full w-[54vw] max-w-[860px]">
-              <div className="roof-plane roof-plane-left absolute inset-y-[5%] left-[-8%] w-[47%]" />
-              <div className="roof-plane roof-plane-right absolute inset-y-[5%] right-[-8%] w-[47%]" />
-            </div>
-          </div>
+          <div className="col-span-12 hidden md:col-span-6 md:block" />
 
           <aside ref={rightPanelRef} className="col-span-12 rounded-3xl border border-[rgb(142_163_181/0.3)] bg-white/58 p-6 backdrop-blur-md md:col-span-3 md:p-7 xl:col-span-3">
             <h2 className="font-display text-xl">Ce construim</h2>
@@ -181,19 +176,7 @@ export function TriangleRevealHero() {
           </aside>
         </div>
 
-        <div className="pointer-events-none absolute inset-0 z-30 flex items-center justify-center px-4 md:px-8">
-          <div
-            className="relative h-[82vh] min-h-[560px] w-[52vw] min-w-[310px] max-w-[920px] overflow-hidden [clip-path:polygon(50%_2.4%,7%_98%,93%_98%)] md:w-[50vw]"
-          >
-            <div className="absolute inset-0" />
-
-            <div className="liquid-glass absolute inset-0 z-10 border border-[rgb(207_230_243/0.76)]">
-              <div ref={glassDistortRef} className="liquid-distort absolute inset-0" />
-              <div className="glass-highlight absolute inset-0" />
-              <div className="glass-edge absolute inset-0" />
-            </div>
-          </div>
-        </div>
+        <div ref={glassDistortRef} className="pointer-events-none absolute inset-0 z-10 liquid-distort opacity-20" />
       </div>
 
       <div ref={handoffRef} className="pointer-events-none absolute inset-x-0 bottom-0 z-30">

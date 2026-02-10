@@ -148,10 +148,10 @@ export function TriangleRevealHero() {
             <p className="mt-3 text-[var(--ink-950)]/78">
               Executăm corect: structură, îmbinări, izolație și finisaje — fără compromisuri.
             </p>
-            <div className="mt-4 flex flex-wrap gap-2 md:mt-5 md:gap-3">
-              <a href="#contact" className="shine rounded-2xl bg-[var(--pine-700)] px-5 py-3 text-sm text-white">Cere ofertă</a>
-              <a href="#modele" className="rounded-2xl border border-[rgb(142_163_181/0.45)] bg-white/60 px-5 py-3 text-sm">Vezi modele A-Frame</a>
-              <a href="#contact" className="self-center text-sm underline decoration-[var(--oak-500)]">Trimite schița ta</a>
+            <div className="mt-4 flex flex-wrap items-center gap-2 md:mt-5 md:gap-3">
+              <a href="#contact" className="shine rounded-xl bg-[var(--pine-700)] px-3 py-1.5 text-xs text-white md:rounded-2xl md:px-5 md:py-3 md:text-sm">Cere ofertă</a>
+              <a href="#modele" className="rounded-xl border border-[rgb(142_163_181/0.45)] bg-white/60 px-3 py-1.5 text-xs md:rounded-2xl md:px-5 md:py-3 md:text-sm">Vezi modele A-Frame</a>
+              <a href="#contact" className="text-xs underline decoration-[var(--oak-500)] md:self-center md:text-sm">Trimite schița ta</a>
             </div>
           </article>
 

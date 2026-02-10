@@ -150,7 +150,7 @@ export function StaggeredModels() {
             <p className="mt-4 text-sm uppercase tracking-wide text-[var(--steel-400)]">
               Structură • Izolație • Tâmplărie • Acoperiș
             </p>
-            <a href="#contact" className="mt-6 inline-block text-sm underline decoration-[var(--oak-500)]">
+            <a href="#contact" className="mt-4 inline-block text-xs underline decoration-[var(--oak-500)] md:mt-6 md:text-sm">
               Cere ofertă pentru acest model
             </a>
           </article>
@@ -264,7 +264,7 @@ export function ContactCTA() {
             <textarea className="mt-2 min-h-28 w-full rounded-xl border border-[rgb(142_163_181/0.45)] px-4 py-3" name="message" />
           </label>
           <div className="md:col-span-2">
-            <button type="submit" className="shine rounded-full bg-[var(--pine-700)] px-6 py-3 text-white">
+            <button type="submit" className="shine rounded-xl bg-[var(--pine-700)] px-3 py-1.5 text-xs text-white md:rounded-full md:px-6 md:py-3 md:text-sm">
               Cere ofertă
             </button>
             <p className="mt-3 text-sm text-[var(--ink-950)]/70">Răspundem în 24–48h (lucrătoare).</p>
